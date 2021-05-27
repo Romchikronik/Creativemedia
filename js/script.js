@@ -67,7 +67,7 @@ $(document).ready(function () {
           scrollTop: 0  
         }, 1200)
     })
-    $('.btn').click(function(e){
+    $('.btn_open-form').click(function(e){
         e.preventDefault();
        $('.overlay').show().css('overflow-y', 'auto');
        $('body').css('overflow-y', 'hidden');
@@ -82,4 +82,33 @@ $(document).ready(function () {
             top: '-150%'
          })
      })
+     $('.footer-contact-social__vacancy').click(function(e){
+        e.preventDefault();
+       $('.overlay').show().css('overflow-y', 'auto');
+       $('body').css('overflow-y', 'hidden');
+       $('.vacancy').animate({
+          left: '50%'
+       })
+    })
+    $('.content-form__close, .overlay').click(function(){
+        $('.overlay').hide();
+        $('body').css('overflow-y', 'scroll');
+        $('.vacancy').animate({
+            left: '-150%'
+         })
+     })
+     $('.input_file input[type=file]').change(function() {
+        var t = $(this).val();
+        if (t.indexOf('C:\\fakepath\\') + 1) t = t.substr(12);
+        var e = $(this).next().find('.fake_file_input');
+        e.val(t);
+    });
+   /*  $('.clear_input').click(function(e) {
+        e.preventDefault();
+        var a = $(this).parent();
+        var e = a.find('.fake_file_input');
+        var t = a.find('input[type=file]');
+        t.replaceWith('<input type="file" name="" >');
+        e.val('');
+    }); */
 });
