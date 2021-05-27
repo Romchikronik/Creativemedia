@@ -781,10 +781,6 @@ body {
   margin-bottom: 0;
 }
 
-.footer-contact-block__img {
-  display: none;
-}
-
 .footer-contact-form {
   width: 50%;
   background: #fff;
@@ -1278,6 +1274,10 @@ body {
 
   .footer-contact-block__subtitle {
     text-align: center;
+  }
+
+  .footer-contact-block__img {
+    display: none;
   }
 
   .footer-contact-form {
