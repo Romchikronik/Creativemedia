@@ -111,4 +111,18 @@ $(document).ready(function () {
         t.replaceWith('<input type="file" name="" >');
         e.val('');
     }); */
+    var i = 0;
+    var txt = 'Мы - точка роста вашего бизнеса. Проанализируем вашу компанию и предложим лучший вариант реализации в интернете';
+    var speed = 50;
+    function typeWriter() {
+    if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    document.getElementById("demo-mobile").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+    }
+    }
+    window.onload = function(){
+        typeWriter();
+    }
 });

@@ -27,6 +27,34 @@ body {
   font-weight: 400;
 }
 
+/* width */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: blue;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(-5%, #ff33cc), color-stop(82%, #6600ff));
+  background: linear-gradient(to bottom right, #ff33cc -5%, #6600ff 82%);
+}
+
 .fixed-top {
   position: fixed !important;
   top: 0;
@@ -356,7 +384,7 @@ body {
 .logo {
   z-index: 4;
   color: #fff;
-  font-family: 'Pattaya';
+  font-family: 'Sofia';
   font-weight: bold;
   font-size: 21px;
   line-height: 22px;
@@ -1035,7 +1063,7 @@ body {
 }
 
 .footer-logo {
-  font-size: 45px;
+  font-size: 35px;
   line-height: 45px;
   margin-left: 0;
 }
@@ -1452,10 +1480,6 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  .footer-logo {
-    font-size: 40px;
   }
 
   .footer-logo .logo__line {
