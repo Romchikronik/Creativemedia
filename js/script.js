@@ -2,7 +2,7 @@ $(document).ready(function () {
     new WOW().init();
     var onOff = true;
     var onOff2 = true;
-    $('.header-menu__link').click(function(e){
+    $('.header-menu__link, site-menu__link').click(function(e){
         e.preventDefault();
         var navHeight = $('.header-nav').outerHeight() - 10;
         var href = $(this).attr('href');
@@ -47,7 +47,7 @@ $(document).ready(function () {
             }) 
             onOff = true;
         }
-        $('.header-menu__link').each(function(){
+        $('.header-menu__link, site-menu__link').each(function(){
             var href = $(this).attr('href');
             var target = $(href).offset().top - $('.header-nav').outerHeight() - 10;
             if(target <=  $(window).scrollTop()){
