@@ -1396,6 +1396,10 @@ body {
   padding-left: 50px;
 }
 
+/* .smm-prices{
+    padding: 100px 0;
+} */
+
 @media (max-width: 1199.98px) {
   .title {
     max-width: 400px;
@@ -1652,6 +1656,12 @@ body {
 
   .header .intro-content__wrap-title {
     min-height: 160px;
+  }
+
+  .site-menu__link {
+    font-size: 22px;
+    padding: 10px 0;
+    display: inline-block;
   }
 
   .contact {
