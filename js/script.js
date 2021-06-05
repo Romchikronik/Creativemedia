@@ -61,6 +61,13 @@ $(document).ready(function () {
         else{
             $('#top').fadeOut();
         }
+        
+        
+        if($(this).scrollTop() > $('.smm-prices').outerHeight()){
+            $('.smm-advantages-left__title').animate({
+                top: 800
+            }, 30000)
+        }
     })
     $('#top').click(function(){
         $('html').animate({
@@ -125,4 +132,15 @@ $(document).ready(function () {
     window.onload = function(){
         typeWriter();
     }
+    $('.smm-prices-block__header').click(function(){
+        if(!$(this).hasClass('open')){
+            $('.smm-prices-block__content').slideUp();
+            $(this).next().slideDown().css('display', 'flex');
+            $(this).addClass('open');
+        }
+        else{
+            $('.smm-prices-block__header').removeClass('open');
+            $('.smm-prices-block__content').slideUp();
+        }
+     })  
 });

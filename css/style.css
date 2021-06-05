@@ -917,6 +917,8 @@ body {
 .vacancy,
 .content-form {
   position: fixed;
+  height: 620px;
+  overflow-y: scroll;
   left: 50%;
   top: -150%;
   -webkit-transform: translate(-50%, -50%);
@@ -1396,9 +1398,217 @@ body {
   padding-left: 50px;
 }
 
-/* .smm-prices{
-    padding: 100px 0;
-} */
+.smm-prices {
+  padding: 100px 0;
+}
+
+.smm-prices__title {
+  font-size: 35px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 25px;
+  color: black;
+}
+
+.smm-prices__subtitle {
+  max-width: 75%;
+  margin: 0 auto 50px;
+  text-align: center;
+  font-size: 19px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.smm-prices-block__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.smm-prices-block__text-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 500px;
+}
+
+.smm-prices-block__title {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.smm-prices-block__title_big {
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 34px;
+}
+
+.smm-prices-block__btn {
+  width: 180px;
+  background: none;
+  height: 50px;
+  border-radius: 25px;
+  border-color: #000;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.smm-prices-block__subtitle {
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.smm-prices-block__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 50px 0;
+  background: rgba(128, 128, 128, 0.1);
+  display: none;
+}
+
+.smm-prices-block__text {
+  padding-top: 5px;
+  max-width: 50%;
+}
+
+.smm-prices-block__text .mini-block {
+  margin-bottom: 25px;
+}
+
+.smm-prices-block__text h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: 22px;
+}
+
+.smm-prices-block__text p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.smm-prices-block__text ul {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.smm-prices-block__text ul span::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 6px;
+  width: 6px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.smm-prices-block__text button {
+  width: 250px;
+  height: 60px;
+  border-radius: 50px;
+  background: #0ac90a;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  margin-top: 50px;
+}
+
+.smm-prices-block__text button:hover {
+  border-color: #0ac90a;
+  background: #fff;
+  color: #0ac90a;
+  margin-left: 20px;
+}
+
+.smm-advantages {
+  padding: 50px 50px 100px;
+}
+
+.smm-advantages__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.smm-advantages-left {
+  font-size: 35px;
+  line-height: 60px;
+  height: 100%;
+  color: #4f4c4c;
+  position: relative;
+}
+
+.smm-advantages-left__title {
+  position: absolute;
+  width: 450px;
+}
+
+.smm-advantages-right__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 600px;
+  margin-bottom: 100px;
+}
+
+.smm-advantages-right__text {
+  margin-left: 50px;
+}
+
+.smm-advantages-right__title {
+  font-size: 25px;
+  color: #000;
+  line-height: 34px;
+  margin-bottom: 25px;
+  max-width: 385px;
+}
+
+.smm-advantages-right__subtitle,
+.smm-advantages-right__list {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.smm-advantages-right .tn-atom__img {
+  margin-top: 20px;
+}
 
 @media (max-width: 1199.98px) {
   .title {
@@ -1506,6 +1716,7 @@ body {
   .content-form {
     width: 500px;
     padding: 30px 20px;
+    height: 520px;
   }
 
   .vacancy__title,
@@ -1824,6 +2035,7 @@ body {
   .content-form {
     width: 300px;
     padding: 20px 10px;
+    height: 440px;
   }
 
   .vacancy__title,
