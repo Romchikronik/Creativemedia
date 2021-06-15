@@ -1486,6 +1486,7 @@ body {
 .smm-service-miniblock__link .fa {
   font-size: 80px;
   line-height: 80px;
+  color: #FFCC00;
 }
 
 .smm-service-miniblock__link .fa-telegram {
@@ -1510,6 +1511,10 @@ body {
 
 .smm-service-miniblock__link .fa-vk {
   color: #597da3;
+}
+
+.smm-service-miniblock__link .fa-y-combinator {
+  color: red;
 }
 
 .smm-service-miniblock__title {
