@@ -1457,12 +1457,11 @@ body {
 }
 
 .smm-service-block:hover {
-  border-color: #ED1C16;
-  /* #FFCC00 */
+  border-color: #FFCC00;
 }
 
 .smm-service-block:hover .smm-service-miniblock__title {
-  color: #ED1C16;
+  color: #FFCC00;
 }
 
 .smm-service-block__price {
@@ -1486,6 +1485,10 @@ body {
 
 .smm-service-miniblock__link img {
   height: 80px;
+}
+
+.smm-service-miniblock__link .extra-img {
+  height: 130px;
 }
 
 .smm-service-miniblock__link .fa {
