@@ -134,6 +134,12 @@ $(document).ready(function () {
         typeWriter();
     }
       
+  $('.smm-service-miniblock__link_active').click(function(e){
+      e.preventDefault();
+  })
+      
+  
+      
   
     
     
