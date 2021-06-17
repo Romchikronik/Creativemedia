@@ -1471,7 +1471,7 @@ body {
 
 .smm-service-block_active {
   border-color: #FFCC00;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .smm-service-block__link {
