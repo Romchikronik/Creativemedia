@@ -1468,10 +1468,23 @@ body {
   border-color: #FFCC00;
 }
 
-.smm-service-block__price {
-  font-size: 23px;
+.smm-service-block__link {
+  border: 1px solid #FFCC00;
+  border-radius: 3px;
+  margin: 0 auto;
+  font-size: 17px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.8);
+  width: 200px;
+  height: 30px;
+  color: #FFCC00;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.smm-service-block__link:hover {
+  background: #FFCC00;
+  color: #fff;
 }
 
 .smm-service-miniblock__link {
@@ -1496,7 +1509,7 @@ body {
 }
 
 .smm-service-miniblock__link .extra-img {
-  height: 130px;
+  height: 120px;
 }
 
 .smm-service-miniblock__link .fa {
