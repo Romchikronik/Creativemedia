@@ -61,7 +61,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 9999;
-  background: blue !important;
+  background: #000 !important;
 }
 
 .menu-open {
@@ -403,14 +403,21 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.logo__line {
-  display: block;
-  background: #fff;
-  height: 45px;
-  width: 1px;
-  margin: 0 20px;
+  background: url("../img/logo_bg.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-position: -105px center;
+  background-color: #000;
+  border-radius: 10px;
+  padding: 5px 10px;
+  /*  &__line{
+            display: block;
+            background: $white;
+            height: 45px; 
+            width: 1px;
+            margin: 0 20px;
+    } */
 }
 
 .logo span {
@@ -421,6 +428,7 @@ body {
 .logo img {
   height: 45px;
   width: 40px;
+  margin-right: 60px;
 }
 
 .header-container-fluid__mobile {
@@ -428,7 +436,7 @@ body {
 }
 
 .header-nav {
-  padding: 17px 35px 16px;
+  padding: 12px 35px 11px;
   background: rgba(128, 128, 128, 0);
   position: absolute;
   top: 0;
@@ -471,6 +479,7 @@ body {
 
 .header-menu__link:hover {
   color: #6ae8f1;
+  /* #FFCC00; */
 }
 
 .header-menu__link_active::before {
@@ -674,13 +683,16 @@ body {
   color: #6ae8f1;
 }
 
+.smm-facebooknav {
+  background: #3B5998 !important;
+}
+
 .contact {
   padding: 75px 0 40px;
   background: url("https://photoworkshopadventures.com/wp-content/uploads/2020/05/36-photo-workshop-adventures-uzbekistan.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  /*  https://yt3.ggpht.com/a/AATXAJw_Pr-VAAA0pZ5kzBNRSTXfsPLYkebwgDFLrU9F=s900-c-k-c0x00ffffff-no-rj */
 }
 
 .contact-form {
@@ -1471,7 +1483,7 @@ body {
 
 .smm-service-block_active {
   border-color: #FFCC00;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(128, 128, 128, 0.04);
 }
 
 .smm-service-block__link {
@@ -2436,7 +2448,7 @@ body {
     max-width: 100%;
     position: fixed;
     height: 100%;
-    background: blue;
+    background: #000;
     left: 0;
     top: 0;
     z-index: 3;
